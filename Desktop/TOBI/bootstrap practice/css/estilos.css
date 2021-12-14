@@ -55,20 +55,12 @@
 	grid-area: nav;
 	position: fixed;
 	display: flex;
-	opacity: 0.85;
 	top: 0;
 	background-color: #1119;
 	width: 100%;
-	height: min 80px, auto;
+	height: 80px;
 	flex-direction: row;
 	justify-content: space-evenly;	
-	margin: 0;
-}
-
-.logoNav {
-	border-radius: 15px;
-	border: 3px solid #9999;
-	background-color: #1119;
 }
 
 .logoNav img{
@@ -76,15 +68,10 @@
 	height: 80px;
 	align-items: center;
 	justify-content: center;
+	padding: 8px;
 	cursor: pointer;
-	transition: all 0.25s ease-in-out;
-	border-radius: inherit;
+	opacity: 0.7;
 }
-
-.logoNav img:hover{
-	transform: scale(1.1);
-}
-
 
 #header ul.navegador{
 	display: flex;
@@ -95,8 +82,6 @@
 	box-sizing: border-box;
 	align-items: center;
 	justify-content: center;
-	margin: 0;
-	padding: 0;
 }
 
 #header .navegador li{
@@ -145,7 +130,7 @@
 	align-items: center;
 	background-color: #5557;
 	height: auto;
-	border-radius: 15px;
+	border-radius: 20px;
 	cursor: pointer;
 	border: 5px solid #0009;
 	width: 80%;
@@ -200,13 +185,15 @@
 	color: #000;
 	font-size: 25px;
 	transition: all 0.25s ease-in-out;
-	border-radius: 15px;
 }
 
 #footer a:hover{
 	color: #fff;
 }	
 
+#footer .hover:hover{
+	transform: scale(1.1);
+}
 
 @keyframes animacion{
 	0%{
@@ -221,7 +208,6 @@
 	animation-name: animacion;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in-out;
-	animation-duration: 0.5s;
+	animation-duration: 0.85s;
 	animation-delay: 0.2s;
 }
-
